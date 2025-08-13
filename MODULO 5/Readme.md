@@ -1,18 +1,20 @@
-***Biblioteca KeyDB**
-**Descripción**
+# Biblioteca KeyDB
+
+## Descripción
 Esta aplicación de línea de comandos permite gestionar una biblioteca personal utilizando KeyDB, un sistema de almacenamiento en memoria compatible con Redis. Cada libro se guarda como un objeto JSON y las operaciones CRUD se realizan mediante la biblioteca redis-py.
 
-**Requisitos**
+## Requisitos
 Python 3.11 o superior
 
 Docker (para ejecutar KeyDB en contenedor)
 
 Paquetes Python: redis, python-dotenv
 
-**Instalación de KeyDB con Docker**
+## Instalación de KeyDB con Docker
 Descargar e instalar Docker Desktop: https://www.docker.com/products/docker-desktop
 
 Ejecutar KeyDB en un contenedor:
+
 buscar en images key db
 ![ky](https://github.com/user-attachments/assets/10db0bbd-eb1b-408b-9a6f-7c8f96f62345)
 lo instalas, haces la configuracion basica y lo corres en un contenedor
@@ -29,7 +31,8 @@ Si tu KeyDB tiene contraseña, colócala en REDIS_PASSWORD.
 
 Ejecutar la aplicación
 
-**Operaciones disponibles**
+## Operaciones disponibles
+
 Agregar libro: Título, autor, género y estado (pendiente, leyendo, leído).
 
 Actualizar libro: Permite modificar campos dejando en blanco los que no se cambian.
@@ -43,7 +46,7 @@ Buscar libros: Busca por título, autor o género.
 Salir: Termina la aplicación.
 
 
-Manejo de errores
+## Manejo de errores
 Conexión fallida: Si KeyDB no está activo o la configuración es incorrecta, el programa termina mostrando un mensaje de error.
 
 Libro no encontrado: Al actualizar, eliminar o buscar, si la clave no existe se notifica al usuario.
