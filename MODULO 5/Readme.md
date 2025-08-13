@@ -16,7 +16,9 @@ Descargar e instalar Docker Desktop: https://www.docker.com/products/docker-desk
 Ejecutar KeyDB en un contenedor:
 
 buscar en images key db
+
 ![ky](https://github.com/user-attachments/assets/10db0bbd-eb1b-408b-9a6f-7c8f96f62345)
+
 lo instalas, haces la configuracion basica y lo corres en un contenedor
 
 Verificar que el contenedor esté corriendo: puedes verificar en con el codigo haciendo esto
