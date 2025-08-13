@@ -43,6 +43,7 @@ Cada libro se almacena en KeyDB como un documento JSON:
 json
 
 {
+
   "id": "uuid-unico",
   
   "titulo": "Nombre del libro",
@@ -52,6 +53,7 @@ json
   "genero": "Categoría",
   
   "estado": "pendiente/leyendo/leído"
+  
 }
 
 ## Validaciones y manejo de errores
