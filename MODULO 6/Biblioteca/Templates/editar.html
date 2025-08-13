@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Editar Libro</h2>
+<form method="post">
+    <div class="mb-3">
+        <label for="titulo" class="form-label">Título</label>
+        <input type="text" class="form-control" id="titulo" name="titulo" value="{{ libro.titulo }}" required>
+    </div>
+    <div class="mb-3">
+        <label for="autor" class="form-label">Autor</label>
+        <input type="text" class="form-control" id="autor" name="autor" value="{{ libro.autor }}" required>
+    </div>
+    <div class="mb-3">
+        <label for="genero" class="form-label">Género</label>
+        <input type="text" class="form-control" id="genero" name="genero" value="{{ libro.genero }}" required>
+    </div>
+    <div class="mb-3">
+        <label for="estado" class="form-label">Estado de lectura</label>
+        <select class="form-select" id="estado" name="estado" required>
+            <option value="pendiente" {% if libro.estado == 'pendiente' %}selected{% endif %}>Pendiente</option>
+            <option value="leyendo" {% if libro.estado == 'leyendo' %}selected{% endif %}>Leyendo</option>
+            <option value="leído" {% if libro.estado == 'leído' %}selected{% endif %}>Leído</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Actualizar</button>
+    <a href="{{ url_for('index') }}" class="btn btn-secondary">Cancelar</a>
+</form>
+{% endblock %}

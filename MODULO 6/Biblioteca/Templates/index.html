@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Biblioteca KeyDB</h1>
+<a href="{{ url_for('agregar') }}" class="btn btn-primary mb-3">Agregar Libro</a>
+
+<form method="get" action="{{ url_for('buscar') }}" class="mb-3">
+    <input type="text" name="q" placeholder="Buscar por título, autor o género">
+    <button class="btn btn-secondary">Buscar</button>
+</form>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Título</th><th>Autor</th><th>Género</th><th>Estado</th><th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for libro in libros %}
+        <tr>
+            <td>{{ libro.titulo }}</td>
+            <td>{{ libro.autor }}</td>
+            <td>{{ libro.genero }}</td>
+            <td>{{ libro.estado }}</td>
+            <td>
+                <a href="{{ url_for('editar', libro_id=libro.id) }}" class="btn btn-warning btn-sm">Editar</a>
+                <a href="{{ url_for('eliminar', libro_id=libro.id) }}" class="btn btn-danger btn-sm">Eliminar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
