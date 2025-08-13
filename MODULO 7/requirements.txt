@@ -1,0 +1,13 @@
+Flask
+-----------------
+Jinja2
+MarkupSafe
+Werkzeug
+blinker                    esos van incluidos cuando instalas Flask
+click
+colorama
+itsdangerous
+----------------
+
+dotenv / python-dotenv
+redis
