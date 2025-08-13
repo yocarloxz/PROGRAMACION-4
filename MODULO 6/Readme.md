@@ -41,13 +41,16 @@ Verificar que el contenedor esté corriendo: puedes verificar en con el codigo h
 Cada libro se almacena en KeyDB como un documento JSON:
 
 json
-Copiar
-Editar
+
 {
   "id": "uuid-unico",
+  
   "titulo": "Nombre del libro",
+  
   "autor": "Nombre del autor",
+  
   "genero": "Categoría",
+  
   "estado": "pendiente/leyendo/leído"
 }
 
