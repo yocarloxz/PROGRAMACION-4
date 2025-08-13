@@ -40,14 +40,14 @@ Antes de usar esta aplicación, debes tener:
    net stop MongoDB
    ```
 ##  Validaciones incluidas en la aplicación
-Error de conexión:
+**Error de conexión:**
 Si no se puede conectar a MongoDB, el programa muestra un mensaje y se cierra.
 
-Documentos mal estructurados:
+**Documentos mal estructurados:**
 El sistema valida que todos los campos requeridos estén presentes antes de insertar.
 
-Búsquedas sin resultados:
+**Búsquedas sin resultados:**
 Si no se encuentra ningún libro con el criterio dado, se informa al usuario.
 
-Entrada vacía:
+**Entrada vacía:**
 No se permite dejar campos en blanco.
