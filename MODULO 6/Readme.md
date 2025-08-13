@@ -44,15 +44,15 @@ json
 
 {
 
-  "id": "uuid-unico",
+    "id": "uuid-unico",
   
-  "titulo": "Nombre del libro",
+    "titulo": "Nombre del libro",
   
-  "autor": "Nombre del autor",
+    "autor": "Nombre del autor",
   
-  "genero": "Categoría",
+    "genero": "Categoría",
   
-  "estado": "pendiente/leyendo/leído"
+    "estado": "pendiente/leyendo/leído"
   
 }
 
