@@ -25,7 +25,7 @@ Antes de usar esta aplicación, debes tener:
 
 ##  Instalación de MongoDB
 
-###  Opción 1: Instalación local (recomendada para desarrollo)
+### Instalación local (recomendada para desarrollo)
 1. Descarga MongoDB Community Server desde:  
     [https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community)
 2. Durante la instalación, selecciona **"Run MongoDB as a Service"** para que se ejecute automáticamente.
