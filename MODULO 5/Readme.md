@@ -24,18 +24,6 @@ lo instalas, haces la configuracion basica y lo corres en un contenedor
 Verificar que el contenedor esté corriendo: puedes verificar en con el codigo haciendo esto
 ![pn](https://github.com/user-attachments/assets/bd02d1f1-3972-450f-9195-dca81ca6667f)
 
-Crear un archivo .env en la raíz del proyecto con la configuración de KeyDB:
-
-REDIS_HOST=localhost
-
-REDIS_PORT=6379(default)
-
-REDIS_PASSWORD=
-
-Si tu KeyDB tiene contraseña, colócala en REDIS_PASSWORD.
-
-Ejecutar la aplicación
-
 ## Operaciones disponibles
 
 Agregar libro: Título, autor, género y estado (pendiente, leyendo, leído).
