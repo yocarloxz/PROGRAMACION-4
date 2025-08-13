@@ -27,8 +27,11 @@ Verificar que el contenedor esté corriendo: puedes verificar en con el codigo h
 Crear un archivo .env en la raíz del proyecto con la configuración de KeyDB:
 
 REDIS_HOST=localhost
+
 REDIS_PORT=6379(default)
+
 REDIS_PASSWORD=
+
 Si tu KeyDB tiene contraseña, colócala en REDIS_PASSWORD.
 
 Ejecutar la aplicación
