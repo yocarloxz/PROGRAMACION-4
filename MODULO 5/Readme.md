@@ -26,24 +26,24 @@ Verificar que el contenedor esté corriendo: puedes verificar en con el codigo h
 
 ## Operaciones disponibles
 
-Agregar libro: Título, autor, género y estado (pendiente, leyendo, leído).
+**Agregar libro:** Título, autor, género y estado (pendiente, leyendo, leído).
 
-Actualizar libro: Permite modificar campos dejando en blanco los que no se cambian.
+**Actualizar libro:** Permite modificar campos dejando en blanco los que no se cambian.
 
-Eliminar libro: Elimina un libro usando su ID.
+**Eliminar libro:** Elimina un libro usando su ID.
 
-Listar libros: Muestra todos los libros registrados.
+**Listar libros:** Muestra todos los libros registrados.
 
-Buscar libros: Busca por título, autor o género.
+**Buscar libros:** Busca por título, autor o género.
 
-Salir: Termina la aplicación.
+**Salir:** Termina la aplicación.
 
 
 ## Manejo de errores
-Conexión fallida: Si KeyDB no está activo o la configuración es incorrecta, el programa termina mostrando un mensaje de error.
+**Conexión fallida:** Si KeyDB no está activo o la configuración es incorrecta, el programa termina mostrando un mensaje de error.
 
-Libro no encontrado: Al actualizar, eliminar o buscar, si la clave no existe se notifica al usuario.
+**Libro no encontrado:** Al actualizar, eliminar o buscar, si la clave no existe se notifica al usuario.
 
-Campos vacíos: El programa obliga a completar todos los campos al agregar un libro.
+**Campos vacíos:** El programa obliga a completar todos los campos al agregar un libro.
 
-Estado inválido: Solo se permiten pendiente, leyendo o leído como valores válidos para el estado de lectura.
+**Estado inválido:** Solo se permiten pendiente, leyendo o leído como valores válidos para el estado de lectura.
