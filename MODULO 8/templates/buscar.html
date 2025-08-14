@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3 class="mb-4">Buscar libros</h3>
+<form method="GET" class="mb-4">
+  <div class="input-group">
+    <input type="text" name="filtro" class="form-control" placeholder="Título, Autor o Género" value="{{ filtro }}" required>
+    <button class="btn btn-dark fw-bold" type="submit">Buscar</button>
+  </div>
+</form>
+
+{% if libros %}
+  <div class="row g-3">
+    {% for libro in libros %}
+      <div class="col-md-4">
+        <div class="card p-3 shadow-sm">
+          <h5 class="card-title">{{ libro['titulo'] }}</h5>
+          <p class="card-text mb-1"><strong>Autor:</strong> {{ libro['autor'] }}</p>
+          <p class="card-text mb-1"><strong>Género:</strong> {{ libro['genero'] }}</p>
+          <p class="card-text mb-2"><strong>Estado:</strong> {{ libro['estado'] }}</p>
+          <a href="{{ url_for('editar', libro_id=libro['id']) }}" class="btn btn-secondary btn-sm me-2">Editar</a>
+
+          <form action="{{ url_for('eliminar', libro_id=libro['id']) }}" method="POST" class="d-inline">
+            <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+          </form>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% elif filtro %}
+  <p>No se encontraron libros con ese filtro.</p>
+{% endif %}
+{% endblock %}
