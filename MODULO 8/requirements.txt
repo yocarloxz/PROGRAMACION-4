@@ -1,0 +1,5 @@
+Flask
+Flask-Mail
+celery
+redis
+python-dotenv
