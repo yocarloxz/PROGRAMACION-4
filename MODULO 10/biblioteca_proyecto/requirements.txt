@@ -1,0 +1,15 @@
+Flask
+Flask-Mail
+Flask-Bootstrap
+Flask-WTF
+Flask-Moment
+requests
+redis
+celery
+python-dotenv
+gunicorn
+itsdangerous
+Jinja2
+MarkupSafe
+Werkzeug
+click
