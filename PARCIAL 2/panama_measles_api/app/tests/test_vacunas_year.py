@@ -44,7 +44,7 @@ client = TestClient(app)
 
 
 def test_get_by_year_found():
-    """Prueba que retorna correctamente un registro existente por año"""
+# Prueba que retorna correctamente un registro existente por año
     r = client.get("/vacunas/2001")
     assert r.status_code == 200
     json_data = r.json()
@@ -52,7 +52,8 @@ def test_get_by_year_found():
     assert json_data["value"] == 86.1
 
 def test_get_by_year_not_found():
-    """Prueba que retorna 404 si el año no existe"""
+# Prueba que retorna 404 si el año no existe
     r = client.get("/vacunas/1999")
     assert r.status_code == 404
     assert "No hay datos para el año 1999" in r.json()["detail"]
+
