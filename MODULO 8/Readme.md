@@ -7,4 +7,5 @@ en la terminal local del pycharm haces que el entorno sea virtual
 
 y luego corres el celery con este comando
 " celery -A celery_worker.celery worker --loglevel=info -P solo " 
+
 en windows por lo que tengo entendido lleva el -p solo
